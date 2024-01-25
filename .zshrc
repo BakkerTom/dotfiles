@@ -1,8 +1,11 @@
-# Pure Prompt
+# Path to my dotfiles
+export DOTFILES=$HOME/.dotfiles
+
+# ======== PURE PROMPT ========= #
 autoload -U promptinit; promptinit
 prompt pure
 
-# Antigen plugin manager
+# ======== ANTIGEN ========= #
 source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
@@ -15,40 +18,39 @@ antigen bundle lukechilds/zsh-nvm
 
 antigen apply
 
-# ALIASSES
+# ======== ALIASSES ========= #
+# Shortcuts
 alias zshconfig="nvim ~/.zshrc"
 alias cpip='ipconfig getifaddr en0 | pbcopy'
-alias hmm='h-m-m'
 alias vim='nvim'
 alias lg='lazygit'
 
-# Add Android tools to the path
-export PATH="/Users/thbakker/Library/Android/sdk/platform-tools":$PATH
+# Directories
+alias dotfiles="cd $DOTFILES"
+alias library="cd $HOME/Libary"
+alias dev="cd $HOME/Developer"
 
-export ANDROID_HOME="/Users/thbakker/Library/Android/sdk"
-export ANDROID_SDK_ROOT="/Users/thbakker/Library/Android/sdk"
-export ANDROID_AVD_HOME="/Users/thbakker/.android/avd"
-export PATH="/usr/local/sbin:$PATH"
 
+# ======== ENVIRONMENT ========= #
 export EDITOR=nvim
-
 export RUBYOPT=-W0
 
+# ======== PATH ========= #
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# ======== JENV ========= #
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
 export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
 alias jenv_set_java_home='export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"'
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
-# Configure autojump
+# ======== AUTOJUMP ========= #
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-# Fig post block. Keep at the bottom of this file.
+# ======== FIG ========= #
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 
-# flashlight
-export PATH="/Users/thbakker/.flashlight/bin:$PATH"
