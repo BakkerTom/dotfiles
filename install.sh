@@ -30,3 +30,6 @@ mkdir -p $HOME/Developer
 echo "Setting up nvim..."
 rm -rf $HOME/.config/nvim
 ln -s nvim $HOME/.config/nvim
+
+# Set macOS preferences - we will run this last because this will reload the shell
+source ./.macos
