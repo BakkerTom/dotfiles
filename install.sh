@@ -13,11 +13,7 @@ fi
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 echo "Setting up zsh..."
 rm -rf $HOME/.zshrc
-ln -s "$HOME/.dotfiles/.zshrc" "$HOME/.zshrc"
-
-echo "Setting up nvim..."
-rm -rf $HOME/.config/nvim
-ln -s "$HOME/.dotfiles/nvim" "$HOME/.config/nvim"
+ln -s .zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 brew update
@@ -29,3 +25,8 @@ brew bundle --file ./Brewfile
 # Create a Developer directory for projects
 echo "Creating Developer directory..."
 mkdir -p $HOME/Developer
+
+# NeoVim setup
+echo "Setting up nvim..."
+rm -rf $HOME/.config/nvim
+ln -s nvim $HOME/.config/nvim
