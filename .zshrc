@@ -6,7 +6,7 @@ autoload -U promptinit; promptinit
 prompt pure
 
 # ======== ANTIGEN ========= #
-source /usr/local/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 antigen use oh-my-zsh
 
 # Plugins
@@ -29,7 +29,6 @@ alias lg='lazygit'
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Libary"
 alias dev="cd $HOME/Developer"
-
 
 # ======== ENVIRONMENT ========= #
 export EDITOR=nvim
