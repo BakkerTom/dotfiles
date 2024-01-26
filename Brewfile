@@ -24,17 +24,13 @@ brew "coreutils"
 brew "folly"
 brew "ffmpeg"
 brew "git"
-brew "handbrake"
 brew "imagemagick"
 brew "jenv"
 brew "jq"
 brew "lazygit"
-brew "lua-language-server"
-brew "mint"
 brew "neovim"
 brew "node"
 brew "postgresql@14"
-brew "pyright"
 brew "qrencode"
 brew "redis", restart_service: true
 brew "ripgrep"
@@ -44,7 +40,6 @@ brew "tmux"
 brew "watchman"
 brew "xclip"
 brew "youtube-dl"
-brew "aws/tap/aws-sam-cli"
 brew "facebook/fb/idb-companion"
 brew "github/gh/gh"
 brew "heroku/brew/heroku"
@@ -57,7 +52,9 @@ cask "font-hack-nerd-font"
 
 # Apps
 cask '1password'
+cask '1password-cli'
 cask 'android-studio'
+cask 'fig'
 cask 'figma'
 cask 'firefox'
 cask 'github'
@@ -72,4 +69,3 @@ cask 'visual-studio-code'
 cask 'spotify'
 cask 'swiftformat-for-xcode'
 cask 'xcodes'
-cask 'miro'
