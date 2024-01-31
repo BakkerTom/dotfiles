@@ -15,6 +15,7 @@ antigen bundle lukechilds/zsh-nvm
 antigen apply
 
 # ======== PURE PROMPT ========= #
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 
