@@ -31,5 +31,11 @@ echo "Setting up nvim..."
 rm -rf $HOME/.config/nvim
 ln -s nvim $HOME/.config/nvim
 
+# TMUX setup
+echo "Setting up TMUX..."
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+rm -rf $HOME/.tmux.conf
+ln -s .tmux.conf $HOME/.tmux.conf
+
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
