@@ -1,10 +1,6 @@
 # Path to my dotfiles
 export DOTFILES=$HOME/.dotfiles
 
-# ======== PURE PROMPT ========= #
-autoload -U promptinit; promptinit
-prompt pure
-
 # ======== ANTIGEN ========= #
 source $(brew --prefix)/share/antigen/antigen.zsh
 antigen use oh-my-zsh
@@ -17,6 +13,10 @@ export NVM_LAZY_LOAD=true
 antigen bundle lukechilds/zsh-nvm
 
 antigen apply
+
+# ======== PURE PROMPT ========= #
+autoload -U promptinit; promptinit
+prompt pure
 
 # ======== ALIASSES ========= #
 # Shortcuts
