@@ -48,7 +48,7 @@ brew "wix/brew/applesimutils"
 brew "xcodesorg/made/xcodes"
 
 # Fonts
-cask "font-hack-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
 
 # Apps
 cask '1password'
