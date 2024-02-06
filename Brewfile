@@ -5,9 +5,7 @@ tap "facebook/fb"
 tap "github/gh"
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "juliuscanute/formulae"
@@ -31,6 +29,7 @@ brew "lazygit"
 brew "neovim"
 brew "node"
 brew "postgresql@14"
+brew "pure"
 brew "qrencode"
 brew "redis", restart_service: true
 brew "ripgrep"
@@ -40,6 +39,7 @@ brew "tmux"
 brew "watchman"
 brew "xclip"
 brew "youtube-dl"
+brew "zsh"
 brew "facebook/fb/idb-companion"
 brew "github/gh/gh"
 brew "heroku/brew/heroku"
@@ -49,6 +49,13 @@ brew "xcodesorg/made/xcodes"
 
 # Fonts
 cask "font-jetbrains-mono-nerd-font"
+cask "font-jetbrains-mono"
+cask "font-sf-pro"
+cask "font-sf-compact"
+cask "font-sf-mono"
+cask "font-new-york"
+cask "font-alegreya"
+cask "font-alegreya-sans"
 
 # Apps
 cask 'android-studio'
@@ -59,7 +66,10 @@ cask 'github'
 cask 'google-chrome'
 cask 'hiddenbar'
 cask 'imageoptim'
+cask 'iterm2'
 cask 'keeper-password-manager'
+cask 'logi-options-plus'
+cask 'microsoft-teams'
 cask 'pastebot'
 cask 'raycast'
 cask 'slack'
