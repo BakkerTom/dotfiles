@@ -37,6 +37,7 @@ brew "redis", restart_service: true
 brew "ripgrep"
 brew "scrcpy"
 brew "telnet"
+brew "tree"
 brew "tmux"
 brew "watchman"
 brew "xclip"
