@@ -13,7 +13,7 @@ fi
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 echo "Setting up zsh..."
 rm -rf $HOME/.zshrc
-ln -s .zshrc $HOME/.zshrc
+ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 brew update
@@ -29,13 +29,13 @@ mkdir -p $HOME/Developer
 # NeoVim setup
 echo "Setting up nvim..."
 rm -rf $HOME/.config/nvim
-ln -s nvim $HOME/.config/nvim
+ln -s $HOME/.dotfiles/nvim $HOME/.config/nvim
 
 # TMUX setup
 echo "Setting up TMUX..."
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 rm -rf $HOME/.tmux.conf
-ln -s .tmux.conf $HOME/.tmux.conf
+ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
 
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
