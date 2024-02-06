@@ -21,11 +21,13 @@ brew "autojump"
 brew "coreutils"
 brew "folly"
 brew "ffmpeg"
+brew "gh"
 brew "git"
 brew "imagemagick"
 brew "jenv"
 brew "jq"
 brew "lazygit"
+brew "mas"
 brew "neovim"
 brew "node"
 brew "postgresql@14"
@@ -41,7 +43,6 @@ brew "xclip"
 brew "youtube-dl"
 brew "zsh"
 brew "facebook/fb/idb-companion"
-brew "github/gh/gh"
 brew "heroku/brew/heroku"
 brew "mobile-dev-inc/tap/maestro"
 brew "wix/brew/applesimutils"
@@ -71,6 +72,7 @@ cask 'keeper-password-manager'
 cask 'logi-options-plus'
 cask 'microsoft-teams'
 cask 'pastebot'
+cask 'rapidapi'
 cask 'raycast'
 cask 'slack'
 cask 'the-unarchiver'
@@ -78,3 +80,6 @@ cask 'visual-studio-code'
 cask 'spotify'
 cask 'swiftformat-for-xcode'
 cask 'xcodes'
+
+# Mac App Store
+mas "Things 3", id: 904280696
