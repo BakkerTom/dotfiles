@@ -37,5 +37,10 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 rm -rf $HOME/.tmux.conf
 ln -s $HOME/.dotfiles/.tmux.conf $HOME/.tmux.conf
 
+# NPM setup
+echo "Copying .npmrc..."
+rm -rf $HOME/.npmrc
+ln -s $HOME/.dotfiles/.npmrc $HOME/.npmrc
+
 # Set macOS preferences - we will run this last because this will reload the shell
 source ./.macos
