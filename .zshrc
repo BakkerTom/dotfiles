@@ -1,8 +1,6 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-
 # Path to my dotfiles
 export DOTFILES=$HOME/.dotfiles
+export SECRETS=$DOTFILES/secrets.sh
 
 # ======== ANTIGEN ========= #
 source $(brew --prefix)/share/antigen/antigen.zsh
@@ -45,7 +43,7 @@ export PATH=~/Library/Android/sdk/tools:$PATH
 export PATH=~/Library/Android/sdk/platform-tools:$PATH
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+# export PATH="$PATH:$HOME/.rvm/bin"
 
 # ======== JENV ========= #
 export PATH="$HOME/.jenv/bin:$PATH"
@@ -54,13 +52,18 @@ eval "$(jenv init -)"
 export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"
 alias jenv_set_java_home='export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"'
 
+# ====== ANDROID ======== #
+export ANDROID_HOME=~/Library/Android/sdk
+
 # ======== RUBY ========= #
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh
+source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh
 
 # ======== AUTOJUMP ========= #
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-# ======== FIG ========= #
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+# flashlight
+export PATH="/Users/thbakker/.flashlight/bin:$PATH"
+
+source $SECRETS
+
