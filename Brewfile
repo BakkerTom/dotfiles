@@ -17,7 +17,6 @@ tap "yt-dlp/taps"
 
 # Binaries
 brew "antigen"
-brew "autojump"
 brew "coreutils"
 brew "chruby"
 brew "folly"
@@ -44,6 +43,7 @@ brew "tmux"
 brew "watchman"
 brew "xclip"
 brew "youtube-dl"
+brew "zoxide"
 brew "zsh"
 brew "facebook/fb/idb-companion"
 brew "heroku/brew/heroku"
@@ -63,7 +63,6 @@ cask "font-alegreya-sans"
 
 # Apps
 cask 'android-studio'
-cask 'fig'
 cask 'figma'
 cask 'firefox'
 cask 'github'
@@ -72,6 +71,7 @@ cask 'hiddenbar'
 cask 'imageoptim'
 cask 'iterm2'
 cask 'keeper-password-manager'
+cask 'keyboardcleantool'
 cask 'logi-options-plus'
 cask 'microsoft-teams'
 cask 'pastebot'

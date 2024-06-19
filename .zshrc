@@ -12,6 +12,8 @@ antigen bundle git
 # Lazy load nvm for WICKED performance increase
 export NVM_LAZY_LOAD=true
 antigen bundle lukechilds/zsh-nvm
+antigen bundle zsh-users/zsh-syntax-highlighting
+# antigen bundle zsh-users/zsh-autosuggestions
 
 antigen apply
 
@@ -67,3 +69,5 @@ export PATH="/Users/thbakker/.flashlight/bin:$PATH"
 
 source $SECRETS
 
+eval "$(zoxide init zsh)"
+export PATH=$PATH:$HOME/.maestro/bin
