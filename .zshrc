@@ -47,6 +47,10 @@ export PATH=~/Library/Android/sdk/platform-tools:$PATH
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # export PATH="$PATH:$HOME/.rvm/bin"
 
+# ======= PYENV ========= #
+eval "$(pyenv init -)"
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 # ======== JENV ========= #
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
@@ -58,7 +62,8 @@ alias jenv_set_java_home='export JAVA_HOME="$HOME/.jenv/versions/`jenv version-n
 export ANDROID_HOME=~/Library/Android/sdk
 
 # ======== RUBY ========= #
-source $HOMEBREW_PREFIX/opt/chruby/share/chruby/chruby.sh
+# source /usr/local/opt/chruby/share/chruby/chruby.sh
+source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh
 source $HOMEBREW_PREFIX/opt/chruby/share/chruby/auto.sh
 
 # ======== AUTOJUMP ========= #
