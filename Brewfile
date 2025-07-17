@@ -60,8 +60,6 @@ cask "font-sf-pro"
 cask "font-sf-compact"
 cask "font-sf-mono"
 cask "font-new-york"
-cask "font-alegreya"
-cask "font-alegreya-sans"
 
 # Apps
 cask 'android-studio'
