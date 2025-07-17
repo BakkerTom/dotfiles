@@ -65,6 +65,7 @@ cask "font-alegreya-sans"
 
 # Apps
 cask 'android-studio'
+cask 'chatgpt'
 cask 'figma'
 cask 'firefox'
 cask 'github'
@@ -76,6 +77,7 @@ cask 'keeper-password-manager'
 cask 'keyboardcleantool'
 cask 'logi-options-plus'
 cask 'microsoft-teams'
+cask 'obsidian'
 cask 'pastebot'
 cask 'rapidapi'
 cask 'raycast'
